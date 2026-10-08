@@ -1,0 +1,6 @@
+../Core/aifes/basic/default/ailoss/ailoss_crossentropy_default.c:27:11:ailoss_crossentropy_f32_default	1
+../Core/aifes/basic/default/ailoss/ailoss_crossentropy_default.c:32:11:ailoss_crossentropy_sum_f32_default	3
+../Core/aifes/basic/default/ailoss/ailoss_crossentropy_default.c:55:11:ailoss_crossentropy_mean_f32_default	3
+../Core/aifes/basic/default/ailoss/ailoss_crossentropy_default.c:80:11:ailoss_crossentropy_sparse8_f32_default	1
+../Core/aifes/basic/default/ailoss/ailoss_crossentropy_default.c:85:11:ailoss_crossentropy_sum_sparse8_f32_default	2
+../Core/aifes/basic/default/ailoss/ailoss_crossentropy_default.c:106:11:ailoss_crossentropy_mean_sparse8_f32_default	2

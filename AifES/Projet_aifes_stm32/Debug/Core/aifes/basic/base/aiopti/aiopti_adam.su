@@ -1,0 +1,6 @@
+../Core/aifes/basic/base/aiopti/aiopti_adam.c:38:11:aiopti_adam	16	static
+../Core/aifes/basic/base/aiopti/aiopti_adam.c:51:10:aiopti_adam_sizeof_optimem	24	static
+../Core/aifes/basic/base/aiopti/aiopti_adam.c:58:6:aiopti_adam_init_optimem	40	static
+../Core/aifes/basic/base/aiopti/aiopti_adam.c:87:6:aiopti_adam_zero_gradients	24	static
+../Core/aifes/basic/base/aiopti/aiopti_adam.c:96:6:aiopti_adam_update_params	88	dynamic
+../Core/aifes/basic/base/aiopti/aiopti_adam.c:141:6:aiopti_adam_print_specs	24	static

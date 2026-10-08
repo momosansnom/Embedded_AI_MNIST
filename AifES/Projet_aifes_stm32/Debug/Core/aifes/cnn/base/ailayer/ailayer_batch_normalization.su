@@ -1,0 +1,9 @@
+../Core/aifes/cnn/base/ailayer/ailayer_batch_normalization.c:38:12:ailayer_batch_norm	24	static
+../Core/aifes/cnn/base/ailayer/ailayer_batch_normalization.c:100:6:ailayer_batch_norm_forward	88	static
+../Core/aifes/cnn/base/ailayer/ailayer_batch_normalization.c:145:6:ailayer_batch_norm_backward	96	static
+../Core/aifes/cnn/base/ailayer/ailayer_batch_normalization.c:196:6:ailayer_batch_norm_calc_result_shape	16	static
+../Core/aifes/cnn/base/ailayer/ailayer_batch_normalization.c:202:10:ailayer_batch_norm_sizeof_paramem	32	static
+../Core/aifes/cnn/base/ailayer/ailayer_batch_normalization.c:234:6:ailayer_batch_norm_set_paramem	24	static
+../Core/aifes/cnn/base/ailayer/ailayer_batch_normalization.c:282:10:ailayer_batch_norm_sizeof_trainmem	24	static
+../Core/aifes/cnn/base/ailayer/ailayer_batch_normalization.c:313:6:ailayer_batch_norm_set_trainmem	32	static
+../Core/aifes/cnn/base/ailayer/ailayer_batch_normalization.c:385:6:ailayer_batch_norm_print_specs	24	static

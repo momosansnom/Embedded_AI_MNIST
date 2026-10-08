@@ -1,0 +1,7 @@
+../Core/aifes/cnn/base/ailayer/ailayer_maxpool2d.c:43:12:ailayer_maxpool2d	7
+../Core/aifes/cnn/base/ailayer/ailayer_maxpool2d.c:93:6:ailayer_maxpool2d_forward	2
+../Core/aifes/cnn/base/ailayer/ailayer_maxpool2d.c:126:6:ailayer_maxpool2d_backward	1
+../Core/aifes/cnn/base/ailayer/ailayer_maxpool2d.c:144:6:ailayer_maxpool2d_calc_result_shape	4
+../Core/aifes/cnn/base/ailayer/ailayer_maxpool2d.c:184:10:ailayer_maxpool2d_sizeof_trainmem	1
+../Core/aifes/cnn/base/ailayer/ailayer_maxpool2d.c:194:6:ailayer_maxpool2d_set_trainmem	1
+../Core/aifes/cnn/base/ailayer/ailayer_maxpool2d.c:209:6:ailayer_maxpool2d_print_specs	1

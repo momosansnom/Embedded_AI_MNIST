@@ -1,0 +1,9 @@
+../Core/aifes/basic/base/ailayer/ailayer_template.c:38:12:ailayer_template	1
+../Core/aifes/basic/base/ailayer/ailayer_template.c:86:6:ailayer_template_forward	1
+../Core/aifes/basic/base/ailayer/ailayer_template.c:98:6:ailayer_template_backward	1
+../Core/aifes/basic/base/ailayer/ailayer_template.c:127:6:ailayer_template_calc_result_shape	1
+../Core/aifes/basic/base/ailayer/ailayer_template.c:139:10:ailayer_template_sizeof_paramem	1
+../Core/aifes/basic/base/ailayer/ailayer_template.c:155:6:ailayer_template_set_paramem	1
+../Core/aifes/basic/base/ailayer/ailayer_template.c:180:10:ailayer_template_sizeof_trainmem	1
+../Core/aifes/basic/base/ailayer/ailayer_template.c:192:6:ailayer_template_set_trainmem	1
+../Core/aifes/basic/base/ailayer/ailayer_template.c:212:6:ailayer_template_print_specs	1

@@ -25,16 +25,9 @@
 #ifndef AIFES_CONFIG
 #define AIFES_CONFIG
 
-#if defined __has_include
-#    if __has_include (<Arduino.h>)
-#        include <stdbool.h> // Avoid errors: https://forum.arduino.cc/t/unknown-type-name-bool/942281
-#        include <Arduino.h> // For Serial.print() and PROGMEM
+#include <stdbool.h>
+#define AIDEBUG_ENABLE_PRINTING /**< Enable printing to the console (switch off to save memory) */
 
-        // Enables printing of logs, errors and outputs with the Serial.print() function of the Arduino
-#       define AIDEBUG_ENABLE_PRINTING /**< Enable printing to the console (switch off to save memory) */
-#       define AIFES_USE_ARDUINO_SERIAL_PRINT
-#    endif
-#endif
 
 // Add hardware specific packages
 #if __arm__

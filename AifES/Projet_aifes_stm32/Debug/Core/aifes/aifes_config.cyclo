@@ -1,0 +1,6 @@
+../Core/aifes/aifes_config.c:11:12:uart_write	1
+../Core/aifes/aifes_config.c:18:5:aifes_print	1
+../Core/aifes/aifes_config.c:23:5:aifes_print_int	1
+../Core/aifes/aifes_config.c:30:5:aifes_print_uint	1
+../Core/aifes/aifes_config.c:37:5:aifes_print_long_int	1
+../Core/aifes/aifes_config.c:44:5:aifes_print_float	1

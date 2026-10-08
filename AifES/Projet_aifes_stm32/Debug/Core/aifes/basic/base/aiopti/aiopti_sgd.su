@@ -1,0 +1,9 @@
+../Core/aifes/basic/base/aiopti/aiopti_sgd.c:38:11:aiopti_sgd	16	static
+../Core/aifes/basic/base/aiopti/aiopti_sgd.c:56:10:aiopti_sgd_sizeof_optimem_with_momentum	24	static
+../Core/aifes/basic/base/aiopti/aiopti_sgd.c:63:10:aiopti_sgd_sizeof_optimem_without_momentum	16	static
+../Core/aifes/basic/base/aiopti/aiopti_sgd.c:67:6:aiopti_sgd_init_optimem_with_momentum	40	static
+../Core/aifes/basic/base/aiopti/aiopti_sgd.c:86:6:aiopti_sgd_init_optimem_without_momentum	24	static
+../Core/aifes/basic/base/aiopti/aiopti_sgd.c:91:6:aiopti_sgd_zero_gradients	24	static
+../Core/aifes/basic/base/aiopti/aiopti_sgd.c:100:6:aiopti_sgd_update_params_with_momentum	88	dynamic
+../Core/aifes/basic/base/aiopti/aiopti_sgd.c:126:6:aiopti_sgd_update_params_without_momentum	80	dynamic
+../Core/aifes/basic/base/aiopti/aiopti_sgd.c:149:6:aiopti_sgd_print_specs	24	static

@@ -1,0 +1,5 @@
+../Core/aifes/basic/base/ailayer/ailayer_softsign.c:39:12:ailayer_softsign	1
+../Core/aifes/basic/base/ailayer/ailayer_softsign.c:77:6:ailayer_softsign_backward	1
+../Core/aifes/basic/base/ailayer/ailayer_softsign.c:101:6:ailayer_softsign_forward	1
+../Core/aifes/basic/base/ailayer/ailayer_softsign.c:111:6:ailayer_softsign_calc_result_shape	1
+../Core/aifes/basic/base/ailayer/ailayer_softsign.c:118:6:ailayer_softsign_print_specs	1
