@@ -72,8 +72,6 @@ ailayer_softmax_f32_t		softmax_layer_4	= AILAYER_SOFTMAX_F32_A();
 
 uint16_t output_layer_shape[] = {DATASETS, OUTPUTS};
 
-
-
 uint8_t aifes_f32_fnn_create_model()
 {
   ailayer_t *x;
@@ -102,7 +100,7 @@ uint8_t aifes_f32_fnn_create_model()
 
   if(memory_ptr == NULL)
   {
-    aiprint("Not enough memory available for inference of the neural network.\n");
+    aiprint("Not enough memory available for inference of the neural network.");
     return 1;
   }
 
