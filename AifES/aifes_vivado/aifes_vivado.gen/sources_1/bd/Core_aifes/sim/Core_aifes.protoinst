@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Core_aifes": {
+			"proto_instances": {
+			}
+		}
+	}
+}
