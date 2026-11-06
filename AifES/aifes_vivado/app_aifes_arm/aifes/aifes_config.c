@@ -4,14 +4,16 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "main.h"                    /* HAL_UART_Transmit */
+#include "main.h"
+#include "xuartps.h"
 
-extern UART_HandleTypeDef huart2;    /* adapte au nom de ton UART */
+extern XUartPs Uart_Ps;
+
 
 static int uart_write(const char *s)
 {
     size_t n = strlen(s);
-    HAL_UART_Transmit(&huart2, (uint8_t *)s, (uint16_t)n, HAL_MAX_DELAY);
+    XUartPs_Send(&Uart_Ps,(uint8_t *)s,(uint32_t)n);
     return (int)n;
 }
 

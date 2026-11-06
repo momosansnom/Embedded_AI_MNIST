@@ -37,7 +37,6 @@ set(USER_INCLUDE_DIRECTORIES
 #Example 3: Adding ${MY_ENV}/data/helloworld.c are expanded using project-specific environment settings.
 set(USER_COMPILE_SOURCES
 "../aifes/aifes_config.c"
-"../aifes/aifes_config.cpp"
 "../aifes/basic/avr_pgm/ailayer/ailayer_dense_avr_pgm.c"
 "../aifes/basic/avr_pgm/ailayer/ailayer_elu_avr_pgm.c"
 "../aifes/basic/avr_pgm/ailayer/ailayer_leaky_relu_avr_pgm.c"
@@ -101,10 +100,6 @@ set(USER_COMPILE_SOURCES
 "../aifes/cnn/default/ailayer/ailayer_reshape_default.c"
 "../aifes/cnn/default/aimath/aimath_cnn_f32_default.c"
 "main.c"
-"stm32l4xx_hal_msp.c"
-"stm32l4xx_it.c"
-"sysmem.c"
-"system_stm32l4xx.c"
 )
 
 # -----------------------------------------
@@ -186,6 +181,7 @@ set(USER_LINK_OMIT_ALL_SYMBOL_INFO )
 # Add any libraries to be linked below, they will be added as extra libraries.
 # User needs to update USER_LINK_DIRECTORIES below with these library search paths.
 set(USER_LINK_LIBRARIES
+"m"
 )
 
 # Add any directories to look for the libraries to be linked.
