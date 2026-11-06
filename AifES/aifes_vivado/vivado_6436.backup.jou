@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Nov  6 13:39:34 2026
+# Process ID         : 6436
+# Current directory  : C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent9852 C:\Users\azert\Documents\Embedded_AI_MNIST\AifES\aifes_vivado\aifes_vivado.xpr
+# Log file           : C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/vivado.log
+# Journal file       : C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado\vivado.jou
+# Running On         : HPV15
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 8645HS w/ Radeon 760M Graphics
+# CPU Frequency      : 4292 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16357 MB
+# Swap memory        : 23705 MB
+# Total Virtual      : 40063 MB
+# Available Virtual  : 15046 MB
+#-----------------------------------------------------------
+start_gui
+opopen_project C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.xpupupdate_compile_order -fileset sources_open_bd_design {C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.srcs/sources_1/bd/Core_aifes/Core_aifes.bd}
+delete_bd_objs [get_bd_cells axi_dma_0]
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_UART0_PERIPHERAL_ENABLE {1} \
+  CONFIG.PCW_UART1_PERIPHERAL_ENABLE {0} \
+] [get_bd_cells processing_system7_0]
+endgroup
+regenerate_bd_layout
+startgroup
+endgroup
+validate_bd_design
+startgroup
+endgroup
+generate_target all [get_files  C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.srcs/sources_1/bd/Core_aifes/Core_aifes.bd]
+export_ip_user_files -of_objects [get_files C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.srcs/sources_1/bd/Core_aifes/Core_aifes.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.srcs/sources_1/bd/Core_aifes/Core_aifes.bd]
+launch_runs Core_aifes_processing_system7_0_0_synth_1 -jobs 12
+wait_on_run Core_aifes_processing_system7_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.cache/compile_simlib/modelsim} {questa=C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.cache/compile_simlib/questa} {riviera=C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.cache/compile_simlib/riviera} {activehdl=C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.cache/compile_simlib/activehdl}] -of_objects [get_files C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.srcs/sources_1/bd/Core_aifes/Core_aifes.bd] -directory C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.ip_user_files -ipstatic_source_dir C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+write_hw_platform -fixed -force -file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/Core_aifes_wrapper.xsa

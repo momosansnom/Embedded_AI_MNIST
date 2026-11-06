@@ -1,17 +1,17 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCC6CFA53F622E079",
+      "boundary_crc": "0xCC6CFA53B4580162",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../aifes_vivado.gen/sources_1/bd/Core_aifes",
       "name": "Core_aifes",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2025.2"
+      "tool_version": "2025.2",
+      "validated": "true"
     },
     "design_tree": {
-      "processing_system7_0": "",
-      "axi_dma_0": ""
+      "processing_system7_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -300,6 +300,9 @@
           "PCW_EN_EMIO_TTC0": {
             "value": "0"
           },
+          "PCW_EN_EMIO_UART0": {
+            "value": "0"
+          },
           "PCW_EN_ENET0": {
             "value": "0"
           },
@@ -318,6 +321,9 @@
           "PCW_EN_TTC0": {
             "value": "0"
           },
+          "PCW_EN_UART0": {
+            "value": "0"
+          },
           "PCW_EN_UART1": {
             "value": "1"
           },
@@ -331,7 +337,7 @@
             "value": "150.000000"
           },
           "PCW_FPGA2_PERIPHERAL_FREQMHZ": {
-            "value": "50.000000"
+            "value": "50"
           },
           "PCW_GPIO_MIO_GPIO_ENABLE": {
             "value": "0"
@@ -343,7 +349,7 @@
             "value": "LVCMOS 1.8V"
           },
           "PCW_MIO_48_PULLUP": {
-            "value": "disabled"
+            "value": "enabled"
           },
           "PCW_MIO_48_SLEW": {
             "value": "slow"
@@ -352,7 +358,7 @@
             "value": "LVCMOS 1.8V"
           },
           "PCW_MIO_49_PULLUP": {
-            "value": "disabled"
+            "value": "enabled"
           },
           "PCW_MIO_49_SLEW": {
             "value": "slow"
@@ -387,17 +393,14 @@
           "PCW_SD0_PERIPHERAL_ENABLE": {
             "value": "0"
           },
-          "PCW_SDIO_PERIPHERAL_FREQMHZ": {
-            "value": "50"
-          },
           "PCW_SDIO_PERIPHERAL_VALID": {
             "value": "0"
           },
           "PCW_TTC0_PERIPHERAL_ENABLE": {
             "value": "0"
           },
-          "PCW_TTC_PERIPHERAL_FREQMHZ": {
-            "value": "50"
+          "PCW_UART0_PERIPHERAL_ENABLE": {
+            "value": "0"
           },
           "PCW_UART1_GRP_FULL_ENABLE": {
             "value": "0"
@@ -473,80 +476,6 @@
           },
           "preset": {
             "value": "ZedBoard"
-          }
-        }
-      },
-      "axi_dma_0": {
-        "vlnv": "xilinx.com:ip:axi_dma:7.1",
-        "ip_revision": "37",
-        "xci_name": "Core_aifes_axi_dma_0_0",
-        "xci_path": "ip\\Core_aifes_axi_dma_0_0\\Core_aifes_axi_dma_0_0.xci",
-        "inst_hier_path": "axi_dma_0",
-        "has_run_ip_tcl": "true",
-        "interface_ports": {
-          "M_AXI_SG": {
-            "bd_attributes": {
-              "TYPE": {
-                "value": "END_POINT",
-                "value_src": "auto"
-              }
-            },
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data_SG",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          },
-          "M_AXI_MM2S": {
-            "bd_attributes": {
-              "TYPE": {
-                "value": "END_POINT",
-                "value_src": "auto"
-              }
-            },
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data_MM2S",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          },
-          "M_AXI_S2MM": {
-            "bd_attributes": {
-              "TYPE": {
-                "value": "END_POINT",
-                "value_src": "auto"
-              }
-            },
-            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
-            "mode": "Master",
-            "address_space_ref": "Data_S2MM",
-            "base_address": {
-              "minimum": "0x00000000",
-              "maximum": "0xFFFFFFFF",
-              "width": "32"
-            }
-          }
-        },
-        "addressing": {
-          "address_spaces": {
-            "Data_MM2S": {
-              "range": "4G",
-              "width": "32"
-            },
-            "Data_S2MM": {
-              "range": "4G",
-              "width": "32"
-            },
-            "Data_SG": {
-              "range": "4G",
-              "width": "32"
-            }
           }
         }
       }

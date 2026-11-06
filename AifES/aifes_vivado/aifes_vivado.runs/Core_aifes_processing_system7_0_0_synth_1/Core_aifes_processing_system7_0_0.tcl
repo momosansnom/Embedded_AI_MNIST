@@ -76,7 +76,7 @@ set_property ip_output_repo c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aif
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.srcs/sources_1/bd/Core_aifes/ip/Core_aifes_processing_system7_0_0/Core_aifes_processing_system7_0_0.xci
+read_ip -quiet C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.srcs/sources_1/bd/Core_aifes/ip/Core_aifes_processing_system7_0_0/Core_aifes_processing_system7_0_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/aifes_vivado/aifes_vivado.gen/sources_1/bd/Core_aifes/ip/Core_aifes_processing_system7_0_0/Core_aifes_processing_system7_0_0.xdc]
 
 OPTRACE "Adding files" END { }
