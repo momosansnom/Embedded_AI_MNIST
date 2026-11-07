@@ -1,4 +1,6 @@
 #include "aifes_config.h"
+#include <xil_types.h>
+#include <xuartps_hw.h>
 
 #ifdef AIDEBUG_ENABLE_PRINTING
 
@@ -9,12 +11,18 @@
 
 extern XUartPs Uart_Ps;
 
-
 static int uart_write(const char *s)
 {
-    size_t n = strlen(s);
-    XUartPs_Send(&Uart_Ps,(uint8_t *)s,(uint32_t)n);
-    return (int)n;
+    int n = 0;
+    while(*s){ // On lit le caractère jusqu'a la fin
+        if(*s == '\n'){
+            XUartPs_SendByte(Uart_Ps.Config.BaseAddress, '\r');
+        }
+        XUartPs_SendByte(Uart_Ps.Config.BaseAddress, (u8)*s);
+        s++;
+        n++;
+    }
+    return n;
 }
 
 int aifes_print(const char *string)
