@@ -1,0 +1,27 @@
+# Copyright (C) 2026 Advanced Micro Devices, Inc.  All rights reserved.
+# Copyright (c) 2021 Xilinx, Inc.  All rights reserved.
+# SPDX-License-Identifier: MIT
+%YAML 1.2
+---
+title: Bindings for MULT_FLOAT32
+
+maintainers:
+  - firstname lastname <firstname.lastname@amd.com>
+
+type: driver
+
+properties:
+  compatible:
+    OneOf:
+      - items:
+        - enum:
+          - xlnx,mult-float32-1.0
+  reg:
+    description: Add a description here
+
+
+additionalProperties:
+    - reg
+
+examples:
+...

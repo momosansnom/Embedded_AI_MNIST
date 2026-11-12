@@ -27,6 +27,8 @@ set(USER_UNDEFINED_SYMBOLS
 # Example 3: Adding ${CMAKE_SOURCE_DIR}/data/include to add data/include from this project.
 
 set(USER_INCLUDE_DIRECTORIES
+"../ip_user"
+".."
 "../aifes"
 "../Inc"
 )
@@ -36,6 +38,9 @@ set(USER_INCLUDE_DIRECTORIES
 #Example 2: Adding ../../common/helloworld.c will consider the path as relative to this component directory
 #Example 3: Adding ${MY_ENV}/data/helloworld.c are expanded using project-specific environment settings.
 set(USER_COMPILE_SOURCES
+"../ip_user/mult_float32.c"
+"../mult_float32.c"
+"../xmult_float32_g.c"
 "../aifes/aifes_config.c"
 "../aifes/basic/avr_pgm/ailayer/ailayer_dense_avr_pgm.c"
 "../aifes/basic/avr_pgm/ailayer/ailayer_elu_avr_pgm.c"
