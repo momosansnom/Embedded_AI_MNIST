@@ -1,5 +1,9 @@
 verilog xil_defaultlib -i "../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" --include "C:/AMDDesignTools/2025.2/Vivado/data/xilinx_vip/include" --include "../../../../aifes_vivado.gen/sources_1/bd/Core_aifes/ipshared/ec67/hdl" --include "../../../../aifes_vivado.gen/sources_1/bd/Core_aifes/ipshared/9a25/hdl" \
 "../../../bd/Core_aifes/ip/Core_aifes_processing_system7_0_0/sim/Core_aifes_processing_system7_0_0.v" \
+"../../../bd/Core_aifes/ipshared/08f0/hdl/mult_float32_slave_lite_v1_0_S00_AXI.v" \
+"../../../bd/Core_aifes/ipshared/08f0/hdl/mult_float32.v" \
+"../../../bd/Core_aifes/ip/Core_aifes_mult_float32_0_0/sim/Core_aifes_mult_float32_0_0.v" \
+"../../../bd/Core_aifes/ip/Core_aifes_axi_interconnect_0_imp_auto_pc_0/sim/Core_aifes_axi_interconnect_0_imp_auto_pc_0.v" \
 "../../../bd/Core_aifes/sim/Core_aifes.v" \
 
 verilog xil_defaultlib "glbl.v"

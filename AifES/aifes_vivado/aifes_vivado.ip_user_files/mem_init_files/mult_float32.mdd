@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER mult_float32
+	OPTION supported_peripherals = (mult_float32);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = mult_float32;
+END DRIVER

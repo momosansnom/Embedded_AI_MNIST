@@ -3,7 +3,7 @@ onbreak {quit -force}
 onerror {quit -force}
 transcript on
 
-asim +access +r +m+Core_aifes  -L xil_defaultlib -L xilinx_vip -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_22 -L processing_system7_vip_v1_0_24 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -O5 xil_defaultlib.Core_aifes xil_defaultlib.glbl
+asim +access +r +m+Core_aifes  -L xil_defaultlib -L xilinx_vip -L xpm -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_22 -L processing_system7_vip_v1_0_24 -L xbip_utils_v3_0_15 -L axi_utils_v2_0_11 -L xbip_pipe_v3_0_11 -L xbip_dsp48_wrapper_v3_0_7 -L mult_gen_v12_0_24 -L floating_point_v7_1_21 -L proc_sys_reset_v5_0_17 -L generic_baseblocks_v2_1_2 -L fifo_generator_v13_2_14 -L axi_data_fifo_v2_1_36 -L axi_register_slice_v2_1_36 -L axi_protocol_converter_v2_1_37 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -O5 xil_defaultlib.Core_aifes xil_defaultlib.glbl
 
 do {Core_aifes.udo}
 

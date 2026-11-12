@@ -1,0 +1,610 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Thu Nov 12 16:06:15 2026
+| Host         : HPV15 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file mult_float32_timing_summary_routed.rpt -pb mult_float32_timing_summary_routed.pb -rpx mult_float32_timing_summary_routed.rpx -warn_on_violation
+| Design       : mult_float32
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  293         
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (293)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (620)
+5. checking no_input_delay (46)
+6. checking no_output_delay (37)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (293)
+--------------------------
+ There are 293 register/latch pins with no clock driven by root clock pin: s00_axi_aclk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (620)
+--------------------------------------------------
+ There are 620 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (46)
+-------------------------------
+ There are 46 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (37)
+--------------------------------
+ There are 37 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                  657          inf        0.000                      0                  657           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay           657 Endpoints
+Min Delay           657 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.798ns  (logic 3.271ns (37.183%)  route 5.527ns (62.817%))
+  Logic Levels:           3  (FDRE=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/Q
+                         net (fo=32, routed)          2.324     2.842    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[3]
+    SLICE_X110Y50        LUT6 (Prop_lut6_I4_O)        0.124     2.966 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           3.203     6.169    s00_axi_rdata_OBUF[0]
+    AB14                 OBUF (Prop_obuf_I_O)         2.629     8.798 r  s00_axi_rdata_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     8.798    s00_axi_rdata[0]
+    AB14                                                              r  s00_axi_rdata[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[8]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.379ns  (logic 3.280ns (39.141%)  route 5.099ns (60.859%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/Q
+                         net (fo=32, routed)          1.822     2.340    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[3]
+    SLICE_X111Y53        LUT5 (Prop_lut5_I3_O)        0.124     2.464 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[8]_inst_i_1/O
+                         net (fo=1, routed)           3.277     5.741    s00_axi_rdata_OBUF[8]
+    V13                  OBUF (Prop_obuf_I_O)         2.638     8.379 r  s00_axi_rdata_OBUF[8]_inst/O
+                         net (fo=0)                   0.000     8.379    s00_axi_rdata[8]
+    V13                                                               r  s00_axi_rdata[8] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[18]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.130ns  (logic 3.266ns (40.176%)  route 4.864ns (59.824%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/Q
+                         net (fo=32, routed)          1.896     2.414    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[3]
+    SLICE_X110Y52        LUT5 (Prop_lut5_I3_O)        0.124     2.538 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[18]_inst_i_1/O
+                         net (fo=1, routed)           2.968     5.506    s00_axi_rdata_OBUF[18]
+    U15                  OBUF (Prop_obuf_I_O)         2.624     8.130 r  s00_axi_rdata_OBUF[18]_inst/O
+                         net (fo=0)                   0.000     8.130    s00_axi_rdata[18]
+    U15                                                               r  s00_axi_rdata[18] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[23]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.006ns  (logic 3.270ns (40.847%)  route 4.736ns (59.153%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[2]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[2]/Q
+                         net (fo=32, routed)          1.897     2.415    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[2]
+    SLICE_X111Y56        LUT5 (Prop_lut5_I1_O)        0.124     2.539 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[23]_inst_i_1/O
+                         net (fo=1, routed)           2.839     5.378    s00_axi_rdata_OBUF[23]
+    AA18                 OBUF (Prop_obuf_I_O)         2.628     8.006 r  s00_axi_rdata_OBUF[23]_inst/O
+                         net (fo=0)                   0.000     8.006    s00_axi_rdata[23]
+    AA18                                                              r  s00_axi_rdata[23] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[26]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.987ns  (logic 3.288ns (41.174%)  route 4.698ns (58.826%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/Q
+                         net (fo=32, routed)          2.160     2.678    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[3]
+    SLICE_X113Y56        LUT5 (Prop_lut5_I3_O)        0.124     2.802 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[26]_inst_i_1/O
+                         net (fo=1, routed)           2.539     5.340    s00_axi_rdata_OBUF[26]
+    Y19                  OBUF (Prop_obuf_I_O)         2.646     7.987 r  s00_axi_rdata_OBUF[26]_inst/O
+                         net (fo=0)                   0.000     7.987    s00_axi_rdata[26]
+    Y19                                                               r  s00_axi_rdata[26] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[25]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.962ns  (logic 3.276ns (41.147%)  route 4.686ns (58.853%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[2]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[2]/Q
+                         net (fo=32, routed)          1.997     2.515    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[2]
+    SLICE_X113Y56        LUT5 (Prop_lut5_I1_O)        0.124     2.639 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[25]_inst_i_1/O
+                         net (fo=1, routed)           2.689     5.328    s00_axi_rdata_OBUF[25]
+    AA19                 OBUF (Prop_obuf_I_O)         2.634     7.962 r  s00_axi_rdata_OBUF[25]_inst/O
+                         net (fo=0)                   0.000     7.962    s00_axi_rdata[25]
+    AA19                                                              r  s00_axi_rdata[25] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[17]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.959ns  (logic 3.260ns (40.958%)  route 4.699ns (59.042%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/Q
+                         net (fo=32, routed)          1.942     2.460    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[3]
+    SLICE_X109Y52        LUT5 (Prop_lut5_I3_O)        0.124     2.584 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[17]_inst_i_1/O
+                         net (fo=1, routed)           2.757     5.341    s00_axi_rdata_OBUF[17]
+    U16                  OBUF (Prop_obuf_I_O)         2.618     7.959 r  s00_axi_rdata_OBUF[17]_inst/O
+                         net (fo=0)                   0.000     7.959    s00_axi_rdata[17]
+    U16                                                               r  s00_axi_rdata[17] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.939ns  (logic 3.259ns (41.053%)  route 4.680ns (58.947%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/Q
+                         net (fo=32, routed)          1.351     1.869    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[3]
+    SLICE_X111Y50        LUT5 (Prop_lut5_I3_O)        0.124     1.993 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           3.328     5.322    s00_axi_rdata_OBUF[1]
+    AA13                 OBUF (Prop_obuf_I_O)         2.617     7.939 r  s00_axi_rdata_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     7.939    s00_axi_rdata[1]
+    AA13                                                              r  s00_axi_rdata[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.859ns  (logic 3.269ns (41.591%)  route 4.590ns (58.409%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[3]/Q
+                         net (fo=32, routed)          1.617     2.135    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[3]
+    SLICE_X110Y52        LUT5 (Prop_lut5_I3_O)        0.124     2.259 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[10]_inst_i_1/O
+                         net (fo=1, routed)           2.973     5.232    s00_axi_rdata_OBUF[10]
+    V14                  OBUF (Prop_obuf_I_O)         2.627     7.859 r  s00_axi_rdata_OBUF[10]_inst/O
+                         net (fo=0)                   0.000     7.859    s00_axi_rdata[10]
+    V14                                                               r  s00_axi_rdata[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[2]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            s00_axi_rdata[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.842ns  (logic 3.269ns (41.689%)  route 4.573ns (58.311%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y49        FDRE                         0.000     0.000 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[2]/C
+    SLICE_X112Y49        FDRE (Prop_fdre_C_Q)         0.518     0.518 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr_reg[2]/Q
+                         net (fo=32, routed)          1.217     1.735    mult_float32_slave_lite_v1_0_S00_AXI_inst/axi_araddr[2]
+    SLICE_X112Y50        LUT5 (Prop_lut5_I1_O)        0.124     1.859 r  mult_float32_slave_lite_v1_0_S00_AXI_inst/s00_axi_rdata_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           3.356     5.215    s00_axi_rdata_OBUF[3]
+    AA14                 OBUF (Prop_obuf_I_O)         2.627     7.842 r  s00_axi_rdata_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     7.842    s00_axi_rdata[3]
+    AA14                                                              r  s00_axi_rdata[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                            (internal pin)
+  Destination:            mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X4Y20          DSP48E1                      0.000     0.000 r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+                         net (fo=1, routed)           0.002     0.002    mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+    DSP48_X4Y21          DSP48E1                                      r  mult_float32/mult_float32_slave_lite_v1_0_S00_AXI/floating_point_0/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>/<hidden>
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+

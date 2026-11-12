@@ -1,0 +1,1 @@
+floating_point_0.vhd,vhdl,xil_defaultlib,../../../../mult_float32_1_0/src/floating_point_0/sim/floating_point_0.vhd,incdir="../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef"

@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Nov 12 17:32:25 2026
+# Process ID         : 41208
+# Current directory  : C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent24492 C:\Users\azert\Documents\Embedded_AI_MNIST\AifES\ip_repo\edit_mult_float32_v1_0.xpr
+# Log file           : C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/vivado.log
+# Journal file       : C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo\vivado.jou
+# Running On         : HPV15
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 8645HS w/ Radeon 760M Graphics
+# CPU Frequency      : 4292 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16357 MB
+# Swap memory        : 24214 MB
+# Total Virtual      : 40571 MB
+# Available Virtual  : 10501 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/edit_mult_float32_v1_0.xpr
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/component.xml
+ipx::remove_subcore xilinx.com:ip:floating_point:7.1 [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_ooc.xdc [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type xdc [ipx::get_files src/floating_point_0/floating_point_0_ooc.xdc -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_ooc.xdc -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_sim_netlist.v [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type verilogSource [ipx::get_files src/floating_point_0/floating_point_0_sim_netlist.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_sim_netlist.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_stub.v [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type verilogSource [ipx::get_files src/floating_point_0/floating_point_0_stub.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_stub.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0
