@@ -39,8 +39,6 @@ set(USER_INCLUDE_DIRECTORIES
 #Example 3: Adding ${MY_ENV}/data/helloworld.c are expanded using project-specific environment settings.
 set(USER_COMPILE_SOURCES
 "../ip_user/mult_float32.c"
-"../mult_float32.c"
-"../xmult_float32_g.c"
 "../aifes/aifes_config.c"
 "../aifes/basic/avr_pgm/ailayer/ailayer_dense_avr_pgm.c"
 "../aifes/basic/avr_pgm/ailayer/ailayer_elu_avr_pgm.c"

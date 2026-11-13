@@ -89,7 +89,7 @@ int main(void)
   uart_init();
 
   // Test Sans le script python
-  error =  aifes_f32_fnn_create_model();
+  /*error =  aifes_f32_fnn_create_model();
 
   if (error == 1){
 	  // diplay error message for error handling
@@ -114,12 +114,13 @@ int main(void)
   }
   aiprint(" \r\n Fin du calcul \r\n ");
 
-  /* Infinite loop */
+  
   while (1)
   {
 
-  }
-  /*// Test avec le script python 
+  }*/
+  
+  // Test avec le script python 
   error =  aifes_f32_fnn_create_model();
 
   uart_sync();
@@ -128,7 +129,7 @@ int main(void)
     uart_recv((u8*)input_data,sizeof(input_data));
     aifes_f32_fnn_inference(input_data,output_data);
     uart_send((u8*)output_data,sizeof(output_data));
-  }*/
+  }
   
 }
 

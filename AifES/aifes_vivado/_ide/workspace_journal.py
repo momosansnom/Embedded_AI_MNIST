@@ -1,4 +1,4 @@
-# 2026-11-12T14:07:27.580243800
+# 2026-11-13T13:37:11.605758700
 import vitis
 
 client = vitis.create_client()
@@ -10,12 +10,20 @@ status = platform.build()
 comp = client.get_component(name="app_aifes_arm")
 comp.build()
 
-status = platform.update_hw(hw_design = "$COMPONENT_LOCATION/../Core_aifes_wrapper.xsa")
+status = platform.build()
 
-comp = client.get_component(name="app_aifes_arm")
-status = comp.import_files(from_loc="$COMPONENT_LOCATION/../../ip_repo/mult_float32_1_0/drivers/mult_float32_v1_0/src", files=["mult_float32.c", "mult_float32.h", "xmult_float32_g.c"], dest_dir_in_cmp = "app_aifes_arm", is_skip_copy_sources = False)
-
-status = comp.import_files(from_loc="$COMPONENT_LOCATION/../../ip_repo/mult_float32_1_0/drivers/mult_float32_v1_0/src", files=["mult_float32.c", "mult_float32.h"], dest_dir_in_cmp = "ip_user", is_skip_copy_sources = False)
+comp.build()
 
 status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
+
+comp = client.get_component(name="app_aifes_arm")
+comp.set_app_config(key = "USER_INCLUDE_DIRECTORIES", values = ["../ip_user", "..", "../aifes", "../Inc", "los"])
+
+comp.set_app_config(key = "USER_INCLUDE_DIRECTORIES", values = ["../ip_user", "..", "../aifes", "../Inc"])
 

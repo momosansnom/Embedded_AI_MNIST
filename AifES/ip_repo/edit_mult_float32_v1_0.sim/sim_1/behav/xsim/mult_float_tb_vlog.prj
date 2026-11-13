@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog   --include "../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
+"../../../../mult_float32_1_0/hdl/mult_float32.v" \
+"../../../../mult_float32_1_0/hdl/mult_float32_slave_lite_v1_0_S00_AXI.v" \
+
+verilog xil_defaultlib  --include "../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef" \
+"../../../../edit_mult_float32_v1_0.srcs/sim_1/new/mult_float_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

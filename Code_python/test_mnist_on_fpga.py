@@ -2,7 +2,7 @@ import serial
 import numpy as np
 
 #PORT = "/dev/tty.usbmodem1422303"
-PORT = "COM5"
+PORT = "COM12"
 Baudrate = 115200
 
 

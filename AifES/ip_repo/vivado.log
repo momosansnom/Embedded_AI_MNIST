@@ -3,10 +3,10 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu Nov 12 17:39:52 2026
-# Process ID         : 3664
+# Start of session at: Fri Nov 13 13:27:46 2026
+# Process ID         : 9416
 # Current directory  : C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26476 C:\Users\azert\Documents\Embedded_AI_MNIST\AifES\ip_repo\edit_mult_float32_v1_0.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent28940 C:\Users\azert\Documents\Embedded_AI_MNIST\AifES\ip_repo\edit_mult_float32_v1_0.xpr
 # Log file           : C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/vivado.log
 # Journal file       : C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo\vivado.jou
 # Running On         : HPV15
@@ -19,7 +19,7 @@
 # Host memory        : 16357 MB
 # Swap memory        : 24214 MB
 # Total Virtual      : 40571 MB
-# Available Virtual  : 10768 MB
+# Available Virtual  : 10340 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/edit_mult_float32_v1_0.xpr
@@ -130,148 +130,38 @@ INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instanc
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2025.2/Vivado/data/ip'.
-open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 1693.715 ; gain = 280.250
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:14 . Memory (MB): peak = 1713.672 ; gain = 278.758
 update_compile_order -fileset sources_1
-ipx::open_ipxact_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/component.xml
-WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_ooc.xdc' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
-WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_sim_netlist.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
-WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_stub.v' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
-ipx::remove_file src/floating_point_0/floating_point_0_sim_netlist.v [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property core_revision 5 [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-WARNING: [IP_Flow 19-11770] Clock interface 'S00_AXI_CLK' has no FREQ_HZ parameter.
-INFO: [IP_Flow 19-2181] Payment is not required for this core.
-WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
-INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
-ipx::save_core [ipx::current_core]
-update_ip_catalog -rebuild -repo_path c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0
-INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0'
-ipx::merge_project_changes hdl_parameters [ipx::current_core]
-WARNING: [IP_Flow 19-4963] floating_point_0 has board value specified. The packaged IP will be restricted to usage with board 'avnet.com:zedboard:part0:1.4'
-WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_ooc.xdc' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
-WARNING: [IP_Flow 19-5109] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_stub.v' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
-INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
-set_property core_revision 6 [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-WARNING: [IP_Flow 19-11770] Clock interface 'S00_AXI_CLK' has no FREQ_HZ parameter.
-WARNING: [IP_Flow 19-801] The last file in file group "Verilog Simulation" should be an HDL file: "src/floating_point_0/floating_point_0.xci".  During generation the IP Flow uses the last file to determine library and other information when generating the top wrapper file.  If possible, please make sure that non-HDL files are located earlier in the list of files for this file group.
-INFO: [IP_Flow 19-2181] Payment is not required for this core.
-WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
-INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
-ipx::save_core [ipx::current_core]
-update_ip_catalog -rebuild -repo_path c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0
-INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0'
-ipx::remove_file src/floating_point_0/floating_point_0.xci [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/cmodel/floating_point_v7_1_bitacc_cmodel_lin64.zip [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type zip [ipx::get_files src/floating_point_0/cmodel/floating_point_v7_1_bitacc_cmodel_lin64.zip -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/cmodel/floating_point_v7_1_bitacc_cmodel_lin64.zip -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/cmodel/floating_point_v7_1_bitacc_cmodel_nt64.zip [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type zip [ipx::get_files src/floating_point_0/cmodel/floating_point_v7_1_bitacc_cmodel_nt64.zip -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/cmodel/floating_point_v7_1_bitacc_cmodel_nt64.zip -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/demo_tb/tb_floating_point_0.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/demo_tb/tb_floating_point_0.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/demo_tb/tb_floating_point_0.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/doc/floating_point_v7_1_changelog.txt [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type text [ipx::get_files src/floating_point_0/doc/floating_point_v7_1_changelog.txt -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/doc/floating_point_v7_1_changelog.txt -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0.dcp [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type dcp [ipx::get_files src/floating_point_0/floating_point_0.dcp -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0.dcp -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0.veo [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type verilogTemplate [ipx::get_files src/floating_point_0/floating_point_0.veo -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0.veo -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0.vho [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlTemplate [ipx::get_files src/floating_point_0/floating_point_0.vho -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0.vho -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0.xci [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type xci [ipx::get_files src/floating_point_0/floating_point_0.xci -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0.xci -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0.xml [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type xml [ipx::get_files src/floating_point_0/floating_point_0.xml -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0.xml -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_ooc.xdc [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type xdc [ipx::get_files src/floating_point_0/floating_point_0_ooc.xdc -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_ooc.xdc -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_sim_netlist.v [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type verilogSource [ipx::get_files src/floating_point_0/floating_point_0_sim_netlist.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_sim_netlist.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_sim_netlist.vhdl [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/floating_point_0_sim_netlist.vhdl -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_sim_netlist.vhdl -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_stub.v [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type verilogSource [ipx::get_files src/floating_point_0/floating_point_0_stub.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_stub.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_stub.vhdl [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/floating_point_0_stub.vhdl -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_stub.vhdl -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_sv.sv [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type systemVerilogSource [ipx::get_files src/floating_point_0/floating_point_0_sv.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_sv.sv -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/floating_point_0_sv.sveo [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type systemVerilogTemplate [ipx::get_files src/floating_point_0/floating_point_0_sv.sveo -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/floating_point_0_sv.sveo -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/hdl/axi_utils_v2_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/hdl/axi_utils_v2_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/hdl/axi_utils_v2_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/hdl/floating_point_v7_1_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/hdl/floating_point_v7_1_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/hdl/floating_point_v7_1_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/hdl/mult_gen_v12_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/hdl/mult_gen_v12_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/hdl/mult_gen_v12_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/hdl/xbip_utils_v3_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/hdl/xbip_utils_v3_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/hdl/xbip_utils_v3_0_vh_rfs.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/sim/floating_point_0.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/sim/floating_point_0.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/sim/floating_point_0.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::add_file C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/synth/floating_point_0.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property type vhdlSource [ipx::get_files src/floating_point_0/synth/floating_point_0.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-set_property library_name xil_defaultlib [ipx::get_files src/floating_point_0/synth/floating_point_0.vhd -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
-ipx::remove_file src/floating_point_0/cmodel/floating_point_v7_1_bitacc_cmodel_lin64.zip [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/cmodel/floating_point_v7_1_bitacc_cmodel_nt64.zip [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/doc/floating_point_v7_1_changelog.txt [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0.dcp [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0.veo [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0.vho [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0.xml [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0_ooc.xdc [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/demo_tb/tb_floating_point_0.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/sim/floating_point_0.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0_sim_netlist.vhdl [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0_stub.v [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0_stub.vhdl [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0_sv.sv [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0_sv.sveo [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/hdl/axi_utils_v2_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/hdl/floating_point_v7_1_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/hdl/mult_gen_v12_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/hdl/xbip_utils_v3_0_vh_rfs.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/floating_point_0_sim_netlist.v [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-ipx::remove_file src/floating_point_0/synth/floating_point_0.vhd [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
-set_property core_revision 7 [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-WARNING: [IP_Flow 19-11770] Clock interface 'S00_AXI_CLK' has no FREQ_HZ parameter.
-WARNING: [IP_Flow 19-801] The last file in file group "Verilog Synthesis" should be an HDL file: "src/floating_point_0/floating_point_0.xci".  During generation the IP Flow uses the last file to determine library and other information when generating the top wrapper file.  If possible, please make sure that non-HDL files are located earlier in the list of files for this file group.
-INFO: [IP_Flow 19-2181] Payment is not required for this core.
-WARNING: [IP_Flow 19-2187] The Product Guide file is missing.
-INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
-ipx::save_core [ipx::current_core]
-update_ip_catalog -rebuild -repo_path c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0
-INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0'
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 12 17:57:16 2026...
+set_property is_enabled true [get_files  C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/edit_mult_float32_v1_0.srcs/sim_1/new/mult_float_tb.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Fri Nov 13 13:29:48 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'mult_float_tb'
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/edit_mult_float32_v1_0.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/AMDDesignTools/2025.2/Vivado/data/xsim/xsim.ini' copied to run dir:'C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/edit_mult_float32_v1_0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mult_float_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/edit_mult_float32_v1_0.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mult_float_tb_vlog.prj"
+ERROR: [XSIM 43-4307] Invalid entry in the project file, expecting a file name but specified path '../../../../../../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef' represents a directory name.
+ERROR: [XSIM 43-3217] mult_float_tb_vlog.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+"xvhdl --incr --relax -prj mult_float_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/mult_float32_1_0/src/floating_point_0/sim/floating_point_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'floating_point_0'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/edit_mult_float32_v1_0.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/azert/Documents/Embedded_AI_MNIST/AifES/ip_repo/edit_mult_float32_v1_0.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1719.316 ; gain = 5.645
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
